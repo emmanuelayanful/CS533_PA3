@@ -386,6 +386,7 @@ In summary we have from the table below that as $k$ increases, WCSS decreases bu
 | 4 | 1.0000 |
 | 5 | 0.5000 |
 
+![Elbow Plot](./images/kmeans_elbow.jpeg)
 
 The K-Means method has the drawback of being sensitive to the initialization of the centroids or mean points, which makes it difficult to use. A centroid that is initialized as a "far-off" point may end up with no points connected with it, while at the same time more than one cluster may end up associated with a single centroid. Several more centroids may be initialized into the same cluster, resulting in erroneous clustering. This is as a result of the randomness in initializing our centroids.
 
@@ -395,3 +396,8 @@ To overcome the aforementioned drawback, we use K-means++ to attempt to eliminat
 - Calculate $D(x)$, the distance between $x$ and the nearest center that has already been picked, for each data point $x$ that has not been chosen yet.
 - Using a weighted probability distribution, choose one new data point at random as a new center, with a probability proportional to the distance squared $(D(x)^2)$.
 - Repeat Steps 2 and 3 until k centers have been chosen.
+
+
+After implementing K-Means from scratch, we compare the effectiveness of our code with that of scikit-learn. We perform an image segmentation with K-Means using our code and that of scikit-learn, we have the following result on a butterfly image
+
+![Comparison Plot](./images/kmeans_butterfly.jpeg)
