@@ -23,7 +23,7 @@ And as such we generate the tuples $A(1, 1), B(2, 1), C(4, 3), D(5, 4), E(1, 2),
 1.   Specify the number of clusters $k$ and choose $k$ initial centroids.
 Here we want two (2) clusters so we choose the points $A$ and $B$ as our initial centroids which gives $C^1(1, 1)$ and $C^2(2, 1).$
 2.   Find the sum of the squared distances between the data points and the centroids.
-| Observations | X | $\|X - (1, 1)\|$ | $\| X - (2, 1)\|$ |
+| Observations | X | \|X - (1, 1)\| | \| X - (2, 1)\| |
 |:-----------:|:------------:|:------------:|:------------:|
 | A | (1, 1) | $(1 - 1)^2 + (1 - 1)^2 = 0$ | $(1 - 2)^2 + (1 - 1)^2 = 1$ |
 | B | (2, 1) | $(2 - 1)^2 + (1 - 1)^2 = 1$ | $(2 - 2)^2 + (1 - 1)^2 = 0$ |
