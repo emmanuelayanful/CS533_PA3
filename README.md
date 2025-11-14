@@ -25,7 +25,7 @@ Here we want two (2) clusters so we choose the points $A$ and $B$ as our initial
 2.   Find the sum of the squared distances between the data points and the centroids.
 
 | Observations | X | $\|X - (1, 1)\|$ | $\| X - (2, 1)\|$ |
-|:----:|:------:|:----------------:|:----------------:|
+|:-----------:|:------------:|:------------:|:------------:|
 | A | (1, 1) | $(1 - 1)^2 + (1 - 1)^2 = 0$ | $(1 - 2)^2 + (1 - 1)^2 = 1$ |
 | B | (2, 1) | $(2 - 1)^2 + (1 - 1)^2 = 1$ | $(2 - 2)^2 + (1 - 1)^2 = 0$ |
 | C | (4, 3) | $(2 - 1)^2 + (3 - 1)^2 = 13$ | $(4 - 2)^2 + (3 - 1)^2 = 8$ |
@@ -60,7 +60,7 @@ $$C^{2}_{new} = \frac{B+C+D+F}{4}=\frac{(2,1)+(4,3)+(5,4)+(4,4)}{4} =\frac{(15,1
 | E | (1, 2) | $(1-1)^2+(2-1.5)^2=0.25$ | $(1-3.75)^2+(2-3)^2=8.5625$ |
 | F | (4, 4) | $(4-1)^2+(4-1.5)^2=15.25$ | $(4-3.75)^2+(4-3)^2=1.0625$ |
 
-| Observations | X | $\|X - (1, 1.5)\|$ | $\|X - (3.75, 3)\|$ | Cluster |
+| Observations | X | \|X - (1, 1.5)\| | \|X - (3.75, 3)\| | Cluster |
 |:----:|:------:|:----------------:|:----------------:|:---------:|
 | A | (1, 1) | 0.25 | 11.5625 | $C_1$ |
 | B | (2, 1) | 1.25 | 7.0625 | $C_1$ |
@@ -108,6 +108,8 @@ C_{new}^2 = \frac{C+D+F}{3} = \frac{(4,3)+(5,4)+(4,4)}{3} = (4.33,\,3.67)
 $$
 
 At this point, the centroids no longer change values, indicating that the K-Means algorithm has converged.
+
+![K-Means Iteration Plot](images/kmeans_plot.jpeg)
 
 ## **K-means As An Optimization Problem**
 ### **The Objective Function**
