@@ -109,7 +109,7 @@ $$
 
 At this point, the centroids no longer change values, indicating that the K-Means algorithm has converged.
 
-![K-Means Iteration Plot](images/kmeans_plot.jpeg)
+![K-Means Iteration Plot](./images/kmeans_plot.jpeg)
 
 ## **K-means As An Optimization Problem**
 ### **The Objective Function**
